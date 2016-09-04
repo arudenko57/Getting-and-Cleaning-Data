@@ -74,23 +74,18 @@ The resulted data frame has the following structure:
  $ frequencyBodyGyroscopeJerkMagnitude-std()     : num  -0.382 -0.558 -0.549 -0.758 -0.456 ...
 
 Listed below are transformations that were performed in order to create the final data frame.
+
 1.	The project file was downloaded from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip and unzipped. 
-2.	The subject, activity, and features (i.e. measurment) data we loaded into two sets of data frames (training set and test set), and then merged. The result of this step was three data frames – subjects, activities, and features.
+2.	The subject, activity, and features (i.e. measurment) data we loaded into two sets of data frames (training set and test set), and then merged. The result of this step was three data frames â€“ subjects, activities, and features.
 3.	Each variable was assigned a name as follows:
--	subjects (one column): “subject”
--	activities (one column): “activity”
--	features (multiple columns): names defined in the features.txt file
+   -	subjects (one column): â€œsubjectâ€
+   -	activities (one column): â€œactivityâ€
+   -	features (multiple columns): names defined in the features.txt file
 
 4.	Combine all three data frames into one (by columns).
 5.	Drop all features that were not measuring mean or standard deviation and put the result into another data frame.
 6.	Replace the activity values (numbers) with descriptive names using labels in the activity_labels.txt file.
-7.	Replace all abbreviations in the features names with descriptive words (e.g. “Gyro” -> “Gyroscope”).
+7.	Replace all abbreviations in the features names with descriptive words (e.g. â€œGyroâ€ -> â€œGyroscopeâ€).
 8.	Group all the features (measurments) by subject and activity and write the resulted data frame into a text file.
  
-Read the activity, subject, and feature data from corresponding test and training set of files 
-•  Merge the test and training data (activity, subject, and feature data) 
-•  Assign names to the variables in merged data frame created in previous step (get the features names from file features.txt) 
-•  Pull out measurements (features) on the mean and standard deviation into a separate data frame 
-•  Modify the names of variables (feature names) to make them more descriptive (get rid of abbreviations) 
-•  Calculate means for each measurement (feature) grouped by subject and activity 
-•  Write out the resulted data frame into a text file
+
