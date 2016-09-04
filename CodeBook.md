@@ -2,7 +2,7 @@ Code Book
 Project: Getting and Cleaning Data
 The outcome of the project is a tidy data frame containing the means of every measurement (linear acceleration and angular velocity) grouped by subject (a person who performed the activity) and the activity type (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING). 
 
-The resulted data frame has the following structure:
+The resulted data frame has the following structure: (better viewed in Raw mode) 
 
  str(avgData)
 'data.frame':	180 obs. of  68 variables:
