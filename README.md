@@ -1,7 +1,7 @@
 # Getting-and-Cleaning-Data
 Getting and Cleaning Data Course Project
-All the functionality is performed with by script – run_analysis.R
-The script perform the following steps, with each step using the result of previous step(s):
+All the functionality is implemented as one script – run_analysis.R
+The script performs several steps, with each step using the result of previous step(s), as follows:
 -	Download the project zip file and unzip it into several files
 -	Read the activity, subject, and feature data from corresponding test and training set of files
 -	Merge the test and training data (activity, subject, and feature data)
