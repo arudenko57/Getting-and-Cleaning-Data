@@ -4,16 +4,24 @@
 
 #### The resulted data frame has the following structure: (better viewed in Raw mode) 
 
- # str(avgData)
- # 'data.frame':	180 obs. of  68 variables:
+ str(avgData)
+
+ 'data.frame':	180 obs. of  68 variables:
+
  $ subject                                       : int  1 2 3 4 5 6 7 8 9 10 ...
+
  $ activity                                      : Factor w/ 6 levels "LAYING","SITTING",..: 4 4 4 4 4 4 4 4 4 4 ...
+
  $ timeBodyAccelerometer-mean()-X                : num  0.277 0.276 0.276 0.279 0.278 ...
+
  $ timeBodyAccelerometer-mean()-Y                : num  -0.0174 -0.0186 -0.0172 -0.0148 -0.0173 ...
+
 etc.
 
 ## Listed below are transformations that were performed in order to create the final data frame.
-1.	The project file was downloaded from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip and unzipped. 
+1.	The project file was downloaded from 
+https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
+and then unzipped. 
 2.	The subject, activity, and features (i.e. measurment) data we loaded into two sets of data frames (training set and test set), and then merged. The result of this step was three data frames – subjects, activities, and features.
 3.	Each variable was assigned a name as follows:
 - subjects (one column): “subject”
